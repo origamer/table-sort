@@ -1,0 +1,33 @@
+<%= form_for(@sign) do |f| %>
+  <% if @sign.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sign.errors.count, "error") %> не удается сохранить запись:</h2>
+
+      <ul>
+      <% @sign.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :alphabetic %><br>
+    <%= f.text_field :alphabetic %>
+  </div>
+  <div class="field">
+    <%= f.label :numeric %><br>
+    <%= f.text_field :numeric %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :unsortable %><br>
+    <%= f.text_area :unsortable %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

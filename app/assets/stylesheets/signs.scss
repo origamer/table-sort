@@ -1,0 +1,23 @@
+/* отображение сетки таблицы */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Пространство между границами и содержимым ячеек */
+th, td {
+    padding: 15px;
+}
+
+/* отображение указатель при наведении на заголовок */
+th { cursor: pointer; }
+
+/* изменения стиля при наведении на заголовок */
+th:hover {
+  background: indianred;
+  color: white;
+}
+
+h1 {
+	text-align: center;
+}

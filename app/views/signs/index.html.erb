@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Сортировка таблицы</h1>
+
+<table align="center">
+  <thead>
+    <tr>
+      <th>Alphabetic</th>
+      <th>Numeric</th>
+      <th>Date</th>
+      <th>Unsortable</th>
+      <!-- <th colspan="3"></th> -->
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @signs.each do |sign| %>
+      <tr>
+        <td><%= sign.alphabetic %></td>
+        <td><%= sign.numeric %></td>
+        <td><%= sign.date %></td>
+        <td><%= sign.unsortable %></td>
+        <!-- <td><%= link_to 'Просмотр', sign %></td>
+        <td><%= link_to 'Изменить', edit_sign_path(sign) %></td>
+        <td><%= link_to 'Удалить', sign, method: :delete, data: { confirm: 'Вы уверены?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!-- <%= link_to 'Новая запись', new_sign_path %> -->

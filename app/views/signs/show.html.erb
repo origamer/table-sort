@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Alphabetic:</strong>
+  <%= @sign.alphabetic %>
+</p>
+
+<p>
+  <strong>Numeric:</strong>
+  <%= @sign.numeric %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @sign.date %>
+</p>
+
+<p>
+  <strong>Unsortable:</strong>
+  <%= @sign.unsortable %>
+</p>
+
+<%= link_to 'Редактировать', edit_sign_path(@sign) %> |
+<%= link_to 'Назад', signs_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  alphabetic: MyString
+  numeric: 1.5
+  date: 2016-07-19
+  unsortable: MyText
+
+two:
+  alphabetic: MyString
+  numeric: 1.5
+  date: 2016-07-19
+  unsortable: MyText
