@@ -12,7 +12,9 @@ table.sort td, th {
 }
 
 /* Заголовки таблицы */
-table.sort thead td { 
+table.sort thead td {
+	width: 100px; 
+	height: 40px;
 	cursor: pointer;
 	font-weight: bold;
 	text-align: center;
@@ -23,10 +25,14 @@ table.sort thead td.current {
 	background-color: indianred;
 	color: white;
 }
+table.sort thead td.current:hover {
+	background-color: indianred;
+	color: white;
+}
 
 /* Заголовок при наведении */ 
 table.sort thead td:hover {
-  background: indianred;
+  background: rgba(205, 92, 92, 0.46);
   color: white;
 }
 
