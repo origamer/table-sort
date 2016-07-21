@@ -3,3 +3,5 @@
 • Ruby 2.2.3, Rails 4.2.6
 
 • MySQL 5.7.10
+
+Скрипт сортировки столбцов таблицы: https://github.com/origamer/table-sort/blob/master/app/assets/javascripts/sorting.js
