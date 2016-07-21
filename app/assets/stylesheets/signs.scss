@@ -10,9 +10,12 @@ table.sort td, th {
     padding: 15px;
     font-weight: 10px;
 }
+table.sort tr.summary {
+	background-color: rgba(102, 102, 102, 0.29);
+}
 
 /* Заголовки таблицы */
-table.sort thead td {
+table.sort thead td, th {
 	width: 100px; 
 	height: 40px;
 	cursor: pointer;
@@ -32,6 +35,10 @@ table.sort thead td.current:hover {
 
 /* Заголовок при наведении */ 
 table.sort thead td:hover {
+  background: rgba(205, 92, 92, 0.46);
+  color: white;
+}
+table.sort thead th:hover {
   background: rgba(205, 92, 92, 0.46);
   color: white;
 }
