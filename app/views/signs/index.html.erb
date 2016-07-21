@@ -2,13 +2,13 @@
 
 <h1>Сортировка таблицы</h1>
 
-<table id="grid" align="center">
+<table class="sort" align="center">
   <thead>
     <tr>
-      <th data-type="string">Alphabetic</th>
-      <th data-type="number">Numeric</th>
-      <th data-type="">Date</th>
-      <th data-type="">Unsortable</th>
+      <td>Alphabetic</td>
+      <td>Numeric</td>
+      <td>Date</td>
+      <td>Unsortable</td>
     </tr>
   </thead>
 
@@ -19,8 +19,7 @@
         <td><%= sign.numeric %></td>
         <td><%= sign.date %></td>
         <td><%= sign.unsortable %></td>
-        <!-- <td><%= link_to 'Просмотр', sign %></td>
-        <td><%= link_to 'Изменить', edit_sign_path(sign) %></td>
+        <!-- <td><%= link_to 'Изменить', edit_sign_path(sign) %></td>
         <td><%= link_to 'Удалить', sign, method: :delete, data: { confirm: 'Вы уверены?' } %></td> -->
       </tr>
     <% end %>

@@ -1,19 +1,31 @@
-/* отображение сетки таблицы */
-table, th, td {
+/* Таблицв */
+table.sort {
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-/* Пространство между границами и содержимым ячеек */
-th, td {
+/* Ячейки таблицы */
+table.sort td, th {
+	border: 1px solid black;
     padding: 15px;
+    font-weight: 10px;
 }
 
-/* отображение указатель при наведении на заголовок */
-th { cursor: pointer; }
+/* Заголовки таблицы */
+table.sort thead td { 
+	cursor: pointer;
+	font-weight: bold;
+	text-align: center;
+}
 
-/* изменения стиля при наведении на заголовок */
-th:hover {
+/* Заголовок после сортировки */
+table.sort thead td.current {
+	background-color: indianred;
+	color: white;
+}
+
+/* Заголовок при наведении */ 
+table.sort thead td:hover {
   background: indianred;
   color: white;
 }
